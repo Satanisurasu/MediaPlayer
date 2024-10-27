@@ -87,9 +87,7 @@ public class MainActivity extends AppCompatActivity {
 
             if (!isPlaying) {
                 mediaPlayer.pause();
-                btnPlay.setText("Play");
-            } else {
-                btnPlay.setText("Pause");
+
             }
             updateSeekBar();
         }
@@ -100,11 +98,13 @@ public class MainActivity extends AppCompatActivity {
             playTrack();
         } else if (mediaPlayer.isPlaying()) {
             mediaPlayer.pause();
-            btnPlay.setText("Play");
+            // Убираем изменение текста кнопки
+            // btnPlay.setText("Play");
             isPlaying = false;
         } else {
             mediaPlayer.start();
-            btnPlay.setText("Pause");
+            // Убираем изменение текста кнопки
+            // btnPlay.setText("Pause");
             isPlaying = true;
             updateSeekBar();
         }
@@ -119,7 +119,8 @@ public class MainActivity extends AppCompatActivity {
         mediaPlayer.start();
 
         tvTrackName.setText("Playing Track: " + (currentTrackIndex + 1));
-        btnPlay.setText("Pause");
+        // Убираем изменение текста кнопки
+        // btnPlay.setText("Pause");
 
         seekBar.setMax(mediaPlayer.getDuration());
         tvTotalTime.setText(formatTime(mediaPlayer.getDuration()));

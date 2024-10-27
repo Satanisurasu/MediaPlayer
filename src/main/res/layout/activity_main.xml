@@ -119,7 +119,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="@drawable/round_button"
-                android:text="    Next   "
+                android:text="Next"
                 android:textColor="#FFFFFF"
                 android:textSize="14sp" />
         </LinearLayout>
