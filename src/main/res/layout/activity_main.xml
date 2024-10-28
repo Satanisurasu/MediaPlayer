@@ -24,7 +24,7 @@
             android:id="@+id/tvTrackName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Track Name"
+            android:text="Номер трека"
             android:textSize="24sp"
             android:textColor="#FFFFFF"
             android:textStyle="bold"
